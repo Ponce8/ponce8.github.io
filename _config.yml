@@ -1,0 +1,27 @@
+title: PHCCO
+description: Param Hansa Centre for Computational Oncology
+lang: en
+
+url: "https://sarthak-sahoo-0710.github.io"
+baseurl: "/phcco.github.io"
+
+navbar_fixed: true
+footer_fixed: false
+max_width: 930px
+
+include:
+  - _pages
+
+exclude:
+  - LICENSE
+  - README.md
+  - vendor
+
+sass:
+  style: compressed
+
+defaults:
+  - scope:
+      path: "_pages"
+    values:
+      layout: page
