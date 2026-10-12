@@ -4,7 +4,7 @@ This repository contains the reusable Jekyll skeleton for the PHCCO website. It 
 
 ## Add or edit a page
 
-Pages live in `_pages/`. Each page begins with front matter:
+The home page lives in `index.md`; additional pages live in `_pages/`. Each page begins with front matter:
 
 ```yaml
 ---

@@ -8,10 +8,31 @@ description: Faculty network page for PHCCO.
 
 ## Faculty directory
 
-{% include empty-state.html
-  title="Faculty profiles will be added here."
-  text="Use this page for verified names, affiliations, research interests, photographs, and profile links when they are ready."
-%}
+<div class="placeholder-banner">Sample content · replace with verified faculty information</div>
+
+<div class="placeholder-grid">
+  <article class="profile-card">
+    <div class="profile-initials" aria-hidden="true">F1</div>
+    <p class="card-label">Placeholder faculty profile</p>
+    <h3>Faculty Member 01</h3>
+    <p>Department or institutional affiliation</p>
+    <ul class="tag-list"><li>Research area A</li><li>Research area B</li></ul>
+  </article>
+  <article class="profile-card">
+    <div class="profile-initials" aria-hidden="true">F2</div>
+    <p class="card-label">Placeholder faculty profile</p>
+    <h3>Faculty Member 02</h3>
+    <p>Department or institutional affiliation</p>
+    <ul class="tag-list"><li>Research area C</li><li>Research area D</li></ul>
+  </article>
+  <article class="profile-card">
+    <div class="profile-initials" aria-hidden="true">F3</div>
+    <p class="card-label">Placeholder faculty profile</p>
+    <h3>Faculty Member 03</h3>
+    <p>Department or institutional affiliation</p>
+    <ul class="tag-list"><li>Research area E</li><li>Research area F</li></ul>
+  </article>
+</div>
 
 ## Suggested profile fields
 
