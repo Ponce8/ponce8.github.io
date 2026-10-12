@@ -1,6 +1,15 @@
-# PHCCO website skeleton
+# PHCCO website
 
-This repository contains the reusable Jekyll skeleton for the PHCCO website. It follows the same page-oriented structure as `sarthak-sahoo-0710.github.io` without copying any personal biography, contact information, photographs, publications, metrics, or profiles.
+This repository contains the Jekyll website for the Param Hansa Centre for Computational Oncology. It follows the page-oriented structure of `sarthak-sahoo-0710.github.io` and adds data-driven faculty, student, and collaboration profiles.
+
+## Edit people and collaborations
+
+- `_data/people.yml` stores profile details, research interests, recognitions, grants, and advising records.
+- `_data/collaborations.yml` defines Mohit Kumar Jolly's pairwise faculty pages.
+- `_data/joint_publications.yml` stores joint publications grouped by collaborator; the layouts group them by year automatically.
+- `_pages/faculty/`, `_pages/students/`, and `_pages/collaborations/` contain the public profile routes.
+
+Only add grants, advising relationships, contact details, and recognitions when an authoritative source is available. Publication entries should include a DOI whenever possible.
 
 ## Add or edit a page
 
@@ -27,4 +36,4 @@ Shared HTML is in `_layouts/` and `_includes/`. Global colors and layout rules a
 bundle exec jekyll serve
 ```
 
-The production site is built and deployed by GitHub Pages from the `main` branch.
+The production site is built and deployed by the Pages workflow in `.github/workflows/pages.yml` whenever `main` is updated.

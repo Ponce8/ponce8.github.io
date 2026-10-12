@@ -1,0 +1,15 @@
+<article class="person-card{% if include.person.organiser %} organiser-card{% endif %}">
+  <a href="{{ include.href | relative_url }}" class="person-card-photo">
+    {% include person-photo.html person=include.person compact=true %}
+  </a>
+  <div class="person-card-body">
+    {% if include.person.organiser %}<p class="card-label">PHCCO lead organiser</p>{% endif %}
+    <h2><a href="{{ include.href | relative_url }}">{{ include.person.name }}</a></h2>
+    <p class="person-role">{{ include.person.role }}</p>
+    <p>{{ include.person.affiliation }}</p>
+    <ul class="tag-list">
+      {% for interest in include.person.interests limit: 3 %}<li>{{ interest }}</li>{% endfor %}
+    </ul>
+    <a class="profile-link" href="{{ include.href | relative_url }}">View profile <span aria-hidden="true">→</span></a>
+  </div>
+</article>

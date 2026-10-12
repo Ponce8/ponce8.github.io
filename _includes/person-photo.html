@@ -1,0 +1,9 @@
+<div class="person-photo{% if include.compact %} person-photo-compact{% endif %}" data-initials="{{ include.person.initials }}">
+  <img
+    src="{{ include.person.photo }}"
+    alt="{{ include.person.name }}"
+    loading="lazy"
+    onerror="this.hidden=true; this.parentElement.classList.add('photo-fallback')"
+  >
+  <span aria-hidden="true">{{ include.person.initials }}</span>
+</div>

@@ -1,0 +1,142 @@
+- id: mohit-kumar-jolly
+  name: Mohit Kumar Jolly
+  kind: faculty
+  role: Associate Professor and PHCCO lead
+  affiliation: Department of Bioengineering, Indian Institute of Science
+  email: Not listed in the supplied Scholar source
+  scholar_url: https://scholar.google.com/citations?hl=en&user=6fK8E-gAAAAJ
+  scholar_id: 6fK8E-gAAAAJ
+  photo: https://scholar.googleusercontent.com/citations?view_op=view_photo&user=6fK8E-gAAAAJ&citpid=1
+  initials: MJ
+  organiser: true
+  interests:
+    - Computational oncology
+    - Cancer systems biology
+    - Phenotypic plasticity
+    - Metastasis and tumour relapse
+  source_note: Role and affiliation are supported by the IISc PHCCO launch announcement. Research themes reflect that announcement and the joint-publication set.
+  awards: []
+  grants: []
+  advisees: []
+
+- id: paras-jain
+  name: Paras Jain
+  kind: faculty
+  role: Faculty network member
+  affiliation: See linked Google Scholar profile
+  email: Not listed in the supplied Scholar source
+  scholar_url: https://scholar.google.com/citations?hl=en&user=8TEgMyMAAAAJ
+  scholar_id: 8TEgMyMAAAAJ
+  photo: https://scholar.googleusercontent.com/citations?view_op=view_photo&user=8TEgMyMAAAAJ&citpid=1
+  initials: PJ
+  interests:
+    - Epithelial–mesenchymal plasticity
+    - Epigenetic memory
+  source_note: Topics are derived from the verified joint-publication record shown on this site.
+  awards: []
+  grants: []
+  advisees: []
+
+- id: jason-george
+  name: Jason George
+  kind: faculty
+  role: Faculty network member
+  affiliation: See linked Google Scholar profile
+  email: Not listed in the supplied Scholar source
+  scholar_url: https://scholar.google.com/citations?hl=en&user=qFGeJ7EAAAAJ
+  scholar_id: qFGeJ7EAAAAJ
+  photo: https://scholar.googleusercontent.com/citations?view_op=view_photo&user=qFGeJ7EAAAAJ&citpid=1
+  initials: JG
+  interests:
+    - Regulatory-network modelling
+    - Epithelial–mesenchymal plasticity
+    - Spatial modelling and immune escape
+  source_note: Topics are derived from the verified joint-publication records shown on this site.
+  awards: []
+  grants: []
+  advisees: []
+
+- id: anish-thomas
+  name: Anish Thomas
+  kind: faculty
+  role: Faculty network member
+  affiliation: See linked Google Scholar profile
+  email: Not listed in the supplied Scholar source
+  scholar_url: https://scholar.google.com/citations?user=sE_ou3sAAAAJ&hl=en
+  scholar_id: sE_ou3sAAAAJ
+  photo: https://scholar.googleusercontent.com/citations?view_op=view_photo&user=sE_ou3sAAAAJ&citpid=1
+  initials: AT
+  interests:
+    - Small-cell lung cancer
+    - Metastatic organotropism
+    - Tumour evolution and treatment response
+  source_note: Topics are derived from the verified joint-publication records shown on this site.
+  awards: []
+  grants: []
+  advisees: []
+
+- id: jyothi-prabhu
+  name: Jyothi Prabhu
+  kind: faculty
+  role: Faculty network member
+  affiliation: See linked Google Scholar profile
+  email: Not listed in the supplied Scholar source
+  scholar_url: https://scholar.google.com/citations?hl=en&user=9m500mwAAAAJ
+  scholar_id: 9m500mwAAAAJ
+  photo: https://scholar.googleusercontent.com/citations?view_op=view_photo&user=9m500mwAAAAJ&citpid=1
+  initials: JP
+  interests:
+    - Breast cancer
+    - Endocrine-therapy resistance
+    - Epithelial–mesenchymal plasticity
+  source_note: Topics are derived from the verified joint-publication records shown on this site.
+  awards: []
+  grants: []
+  advisees: []
+
+- id: ramray-bhat
+  name: Ramray Bhat
+  kind: faculty
+  role: Faculty network member
+  affiliation: See linked Google Scholar profile
+  email: Not listed in the supplied Scholar source
+  scholar_url: https://scholar.google.com/citations?hl=en&user=wsHX7U0AAAAJ
+  scholar_id: wsHX7U0AAAAJ
+  photo: https://scholar.googleusercontent.com/citations?view_op=view_photo&user=wsHX7U0AAAAJ&citpid=1
+  initials: RB
+  interests:
+    - Research interests pending verification from the supplied profile
+  source_note: No joint publication with Mohit Kumar Jolly was present in the currently available bibliography; the Scholar profile is linked for verification.
+  awards: []
+  grants: []
+  advisees: []
+
+- id: sarthak-sahoo
+  name: Sarthak Sahoo
+  kind: student
+  role: PhD student
+  affiliation: Department of Bioengineering, Indian Institute of Science
+  email: sarthaksahoo@iisc.ac.in
+  scholar_url: https://scholar.google.com/citations?user=Tk9UwcIAAAAJ&hl=en
+  scholar_id: Tk9UwcIAAAAJ
+  photo: https://sarthak-sahoo-0710.github.io/assets/img/prof_pic_sarthak.jpg
+  initials: SS
+  interests:
+    - Computational systems biology
+    - Mathematical modelling of cancer
+    - Phenotypic plasticity
+    - Multi-omics analysis
+  source_note: Profile fields and recognitions are sourced from the reference website supplied by the user.
+  awards:
+    - year: 2025
+      title: Landahl Travel Award, Society for Mathematical Biology meeting
+    - year: 2025
+      title: Best Talk, IISc Bioengineering Symposium
+    - year: 2024
+      title: Best Poster, Physics of Cells and Tissues conference
+    - year: 2023
+      title: Best Poster, Systems Approaches Towards Cancer Cell Plasticity
+    - year: 2021
+      title: Prime Minister's Research Fellowship
+  grants: []
+  advisees: []

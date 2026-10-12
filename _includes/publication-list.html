@@ -1,0 +1,32 @@
+{% assign publications = site.data.joint_publications[include.pair_id] %}
+{% if publications and publications.size > 0 %}
+  {% assign years = publications | group_by: 'year' %}
+  <div class="publication-years">
+    {% for year in years %}
+      <section class="publication-year">
+        <h3>{{ year.name }}</h3>
+        <ol>
+          {% for publication in year.items %}
+            <li>
+              <h4>
+                {% if publication.doi != '' %}<a href="https://doi.org/{{ publication.doi }}">{% endif %}
+                  {{ publication.title }}
+                {% if publication.doi != '' %}</a>{% endif %}
+              </h4>
+              <p class="publication-authors">{{ publication.authors }}</p>
+              <p class="publication-meta">
+                {% if publication.venue != '' %}{{ publication.venue }}{% endif %}
+                {% if publication.doi != '' %}<span>DOI: {{ publication.doi }}</span>{% endif %}
+              </p>
+            </li>
+          {% endfor %}
+        </ol>
+      </section>
+    {% endfor %}
+  </div>
+{% else %}
+  <div class="verification-state">
+    <strong>No joint publication is recorded in the current verified dataset.</strong>
+    <p>This does not assert that none exists; the linked Scholar profiles should be checked before publication.</p>
+  </div>
+{% endif %}

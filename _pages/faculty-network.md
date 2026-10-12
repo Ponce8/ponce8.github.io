@@ -8,35 +8,24 @@ description: Faculty network page for PHCCO.
 
 ## Faculty directory
 
-<div class="placeholder-banner">Sample content · replace with verified faculty information</div>
+<p class="data-note">Profiles use the supplied Google Scholar identities. Fields that Scholar does not provide remain explicitly marked for verification.</p>
 
-<div class="placeholder-grid">
-  <article class="profile-card">
-    <div class="profile-initials" aria-hidden="true">F1</div>
-    <p class="card-label">Placeholder faculty profile</p>
-    <h3>Faculty Member 01</h3>
-    <p>Department or institutional affiliation</p>
-    <ul class="tag-list"><li>Research area A</li><li>Research area B</li></ul>
-  </article>
-  <article class="profile-card">
-    <div class="profile-initials" aria-hidden="true">F2</div>
-    <p class="card-label">Placeholder faculty profile</p>
-    <h3>Faculty Member 02</h3>
-    <p>Department or institutional affiliation</p>
-    <ul class="tag-list"><li>Research area C</li><li>Research area D</li></ul>
-  </article>
-  <article class="profile-card">
-    <div class="profile-initials" aria-hidden="true">F3</div>
-    <p class="card-label">Placeholder faculty profile</p>
-    <h3>Faculty Member 03</h3>
-    <p>Department or institutional affiliation</p>
-    <ul class="tag-list"><li>Research area E</li><li>Research area F</li></ul>
-  </article>
+<div class="people-directory">
+{% assign faculty = site.data.people | where: 'kind', 'faculty' %}
+{% for person in faculty %}
+  {% capture profile_path %}/faculty/{{ person.id }}/{% endcapture %}
+  {% include person-card.html person=person href=profile_path %}
+{% endfor %}
 </div>
 
-## Suggested profile fields
+## Collaboration pages with Mohit Kumar Jolly
 
-- Name and title
-- Institutional affiliation
-- Research interests
-- Profile or laboratory link
+<div class="collaboration-index">
+{% for collaboration in site.data.collaborations %}
+  {% assign collaborator = site.data.people | where: 'id', collaboration.faculty_id | first %}
+  <a href="{{ '/collaborations/' | append: collaboration.id | append: '/' | relative_url }}">
+    <strong>Mohit Kumar Jolly + {{ collaborator.name }}</strong>
+    <span>{{ collaboration.focus }}</span>
+  </a>
+{% endfor %}
+</div>

@@ -1,0 +1,51 @@
+---
+layout: default
+---
+{% assign person = site.data.people | where: 'id', page.person_id | first %}
+<article class="person-profile">
+  <header class="person-hero">
+    {% include person-photo.html person=person %}
+    <div>
+      {% if person.organiser %}<p class="eyebrow">PHCCO lead organiser</p>{% else %}<p class="eyebrow">{{ person.kind }} profile</p>{% endif %}
+      <h1>{{ person.name }}</h1>
+      <p class="person-title">{{ person.role }}</p>
+      <p>{{ person.affiliation }}</p>
+      <div class="profile-actions">
+        <a href="{{ person.scholar_url }}">Google Scholar <span aria-hidden="true">↗</span></a>
+        {% if person.email contains '@' %}<a href="mailto:{{ person.email }}">{{ person.email }}</a>{% else %}<span>{{ person.email }}</span>{% endif %}
+      </div>
+    </div>
+  </header>
+
+  <div class="profile-columns">
+    <section>
+      <h2>Research interests</h2>
+      <ul class="interest-list">{% for interest in person.interests %}<li>{{ interest }}</li>{% endfor %}</ul>
+    </section>
+    <aside class="source-panel">
+      <h2>Source note</h2>
+      <p>{{ person.source_note }}</p>
+    </aside>
+  </div>
+
+  {{ content }}
+
+  <section class="record-section">
+    <h2>Recent awards and recognition</h2>
+    {% if person.awards.size > 0 %}
+      <ul class="timeline-list">{% for award in person.awards %}<li><strong>{{ award.year }}</strong><span>{{ award.title }}</span></li>{% endfor %}</ul>
+    {% else %}
+      {% include empty-state.html title="No verified award records added yet." text="Google Scholar does not provide awards. Add an entry only after checking an institutional or funder source." %}
+    {% endif %}
+  </section>
+
+  <section class="record-section">
+    <h2>Grants</h2>
+    {% include empty-state.html title="No verified grant records added yet." text="Grant title, funding agency, period, amount, and collaborators require a funder or institutional source; they are not supplied by Google Scholar." %}
+  </section>
+
+  <section class="record-section">
+    <h2>Advising and co-advising</h2>
+    {% include empty-state.html title="No verified advising records added yet." text="Student supervision and co-advising relationships require confirmation from the people or their institutions." %}
+  </section>
+</article>
